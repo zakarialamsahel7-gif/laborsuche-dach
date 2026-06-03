@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laborsuche DACH – DEXA & Blutlabore</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Marker Clustering -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+
+  <!-- ── Top Bar ───────────────────────────────────────────────── -->
+  <header class="topbar">
+    <div class="topbar__brand">
+      <span class="topbar__icon">🔬</span>
+      <span class="topbar__title">Laborsuche <strong>DACH</strong></span>
+    </div>
+    <div class="topbar__search">
+      <input
+        id="searchInput"
+        type="search"
+        placeholder="Stadt oder PLZ suchen …"
+        autocomplete="off"
+      />
+    </div>
+  </header>
+
+  <!-- ── Layout ────────────────────────────────────────────────── -->
+  <div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar__filters">
+        <h2 class="sidebar__heading">Filter</h2>
+
+        <fieldset class="filter-group">
+          <legend>Kategorie</legend>
+          <label><input type="radio" name="category" value="all" checked /> Alle</label>
+          <label><input type="radio" name="category" value="dexa" /> DEXA Body Scan</label>
+          <label><input type="radio" name="category" value="blood_lab" /> Blutlabor</label>
+        </fieldset>
+
+        <fieldset class="filter-group">
+          <legend>Land</legend>
+          <label><input type="checkbox" name="country" value="DE" checked /> 🇩🇪 Deutschland</label>
+          <label><input type="checkbox" name="country" value="AT" checked /> 🇦🇹 Österreich</label>
+          <label><input type="checkbox" name="country" value="CH" checked /> 🇨🇭 Schweiz</label>
+        </fieldset>
+
+        <fieldset class="filter-group">
+          <legend>Leistungen</legend>
+          <label><input type="checkbox" name="service" value="body_composition" /> Body Composition</label>
+          <label><input type="checkbox" name="service" value="bone_density" /> Knochendichte</label>
+          <label><input type="checkbox" name="service" value="blood_test_self_pay" /> Bluttest Selbstzahler</label>
+        </fieldset>
+
+        <div class="filter-group">
+          <label class="verified-label">
+            <input type="checkbox" id="verifiedOnly" />
+            Nur verifizierte Anbieter
+          </label>
+        </div>
+
+        <button class="btn-reset" id="resetFilters">Filter zurücksetzen</button>
+      </div>
+
+      <!-- Stats bar -->
+      <div class="sidebar__stats" id="statsBar">
+        Lade …
+      </div>
+
+      <!-- Results list -->
+      <div class="sidebar__results" id="resultsList">
+        <!-- filled by JS -->
+      </div>
+    </aside>
+
+    <!-- Map -->
+    <main class="map-container">
+      <div id="map"></div>
+
+      <!-- Mobile toggle -->
+      <button class="fab" id="sidebarToggle" title="Filter & Liste">☰</button>
+
+      <!-- Legend -->
+      <div class="legend">
+        <div class="legend__item">
+          <span class="legend__dot legend__dot--dexa"></span> DEXA Body Scan
+        </div>
+        <div class="legend__item">
+          <span class="legend__dot legend__dot--blood"></span> Blutlabor
+        </div>
+        <div class="legend__item">
+          <span class="legend__dot legend__dot--both"></span> Beides
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <!-- ── Detail Panel (slide-in) ───────────────────────────────── -->
+  <div class="detail-panel" id="detailPanel">
+    <button class="detail-panel__close" id="closeDetail">✕</button>
+    <div class="detail-panel__content" id="detailContent">
+      <!-- filled by JS -->
+    </div>
+  </div>
+  <div class="detail-overlay" id="detailOverlay"></div>
+
+  <script src="/static/js/map.js"></script>
+</body>
+</html>

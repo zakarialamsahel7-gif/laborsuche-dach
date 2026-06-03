@@ -1,0 +1,157 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://laborsuche-dach/provider.schema.json",
+  "title": "Provider",
+  "description": "Ein Anbieter für DEXA Body-Composition-Scans oder Selbstzahler-Blutuntersuchungen im DACH-Raum",
+  "type": "object",
+
+  "required": ["id", "name", "category", "services", "address", "coordinates"],
+
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Einzigartiger Bezeichner. Format: {kategorie}-{dreistellige-nummer}, z.B. 'dexa-001'",
+      "examples": ["dexa-001", "blood-005", "both-002"]
+    },
+
+    "name": {
+      "type": "string",
+      "minLength": 3,
+      "description": "Offizieller Name der Praxis oder des Labors"
+    },
+
+    "category": {
+      "type": "string",
+      "enum": ["dexa", "blood_lab", "both"],
+      "description": "Hauptkategorie des Anbieters"
+    },
+
+    "services": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["body_composition", "bone_density", "blood_test_self_pay"]
+      },
+      "minItems": 1,
+      "uniqueItems": true,
+      "description": "Liste der angebotenen Leistungen. WICHTIG: 'body_composition' und 'bone_density' sind verschiedene DEXA-Leistungen!"
+    },
+
+    "address": {
+      "type": "object",
+      "required": ["street", "zip", "city", "country"],
+      "properties": {
+        "street":  { "type": "string" },
+        "zip":     { "type": "string", "description": "PLZ (DE: 5-stellig, AT: 4-stellig, CH: 4-stellig)" },
+        "city":    { "type": "string" },
+        "country": { "type": "string", "enum": ["DE", "AT", "CH"] }
+      },
+      "additionalProperties": false
+    },
+
+    "coordinates": {
+      "type": "object",
+      "required": ["lat", "lng"],
+      "properties": {
+        "lat": {
+          "type": "number",
+          "minimum": 45.8,
+          "maximum": 55.1,
+          "description": "Breitengrad (WGS84)"
+        },
+        "lng": {
+          "type": "number",
+          "minimum": 5.9,
+          "maximum": 17.2,
+          "description": "Längengrad (WGS84)"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "contact": {
+      "type": "object",
+      "properties": {
+        "phone":   { "type": "string", "description": "Telefonnummer inkl. Landesvorwahl" },
+        "website": { "type": "string", "format": "uri" },
+        "email":   { "type": "string", "format": "email" }
+      },
+      "additionalProperties": false
+    },
+
+    "self_pay": {
+      "type": "boolean",
+      "default": true,
+      "description": "Selbstzahler ohne Überweisung möglich"
+    },
+
+    "prices": {
+      "type": "object",
+      "properties": {
+        "dexa_body_composition": {
+          "type": ["string", "null"],
+          "description": "Preis als lesbarer String, z.B. 'ca. 99 €' oder '120–150 CHF'"
+        },
+        "bone_density":   { "type": ["string", "null"] },
+        "blood_test":     { "type": ["string", "null"] }
+      },
+      "additionalProperties": true,
+      "description": "Erweiterbar für neue Leistungsarten"
+    },
+
+    "verified": {
+      "type": "boolean",
+      "default": false,
+      "description": "Wurde der Eintrag manuell verifiziert (Anruf, E-Mail, Website-Check)?"
+    },
+
+    "last_verified": {
+      "type": ["string", "null"],
+      "format": "date",
+      "description": "ISO-Datum der letzten Verifikation, z.B. '2024-11-01'"
+    },
+
+    "notes": {
+      "type": ["string", "null"],
+      "description": "Freitexthinweise: Besonderheiten, Terminbuchung, Gerätetyp etc."
+    },
+
+    "source": {
+      "type": ["string", "null"],
+      "description": "Herkunft des Eintrags: 'Website', 'Telefonische Bestätigung', 'Web-Scraping' etc."
+    }
+  },
+
+  "additionalProperties": false,
+
+  "examples": [
+    {
+      "id": "dexa-001",
+      "name": "Sportklinik Stuttgart – Sportmedizin",
+      "category": "dexa",
+      "services": ["body_composition", "bone_density"],
+      "address": {
+        "street": "Taubenheimstraße 8",
+        "zip": "70372",
+        "city": "Stuttgart",
+        "country": "DE"
+      },
+      "coordinates": { "lat": 48.8031, "lng": 9.2337 },
+      "contact": {
+        "phone": "+49 711 5535-0",
+        "website": "https://www.sportklinik.de",
+        "email": ""
+      },
+      "self_pay": true,
+      "prices": {
+        "dexa_body_composition": "ca. 80–120 €",
+        "bone_density": "ca. 60 €",
+        "blood_test": null
+      },
+      "verified": true,
+      "last_verified": "2024-11-01",
+      "notes": "Ganzkörper-DEXA inkl. Body-Composition-Report.",
+      "source": "Website + Telefonische Bestätigung"
+    }
+  ]
+}

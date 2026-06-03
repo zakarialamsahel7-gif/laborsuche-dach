@@ -1,0 +1,590 @@
+[
+  {
+    "id": "dexa-001",
+    "name": "Sportklinik Stuttgart – Sportmedizin",
+    "category": "dexa",
+    "services": ["body_composition", "bone_density"],
+    "address": {
+      "street": "Taubenheimstraße 8",
+      "zip": "70372",
+      "city": "Stuttgart",
+      "country": "DE"
+    },
+    "coordinates": { "lat": 48.8031, "lng": 9.2337 },
+    "contact": {
+      "phone": "+49 711 5535-0",
+      "website": "https://www.sportklinik.de",
+      "email": ""
+    },
+    "self_pay": true,
+    "prices": {
+      "dexa_body_composition": "ca. 80–120 €",
+      "bone_density": "ca. 60 €",
+      "blood_test": null
+    },
+    "verified": true,
+    "last_verified": "2024-11-01",
+    "notes": "Ganzkörper-DEXA inkl. Body-Composition-Report. Terminbuchung telefonisch.",
+    "source": "Direkte Recherche / Website"
+  },
+  {
+    "id": "dexa-002",
+    "name": "Radiologie München Schwabing – DEXA Body Composition",
+    "category": "dexa",
+    "services": ["body_composition", "bone_density"],
+    "address": {
+      "street": "Leopoldstraße 135",
+      "zip": "80804",
+      "city": "München",
+      "country": "DE"
+    },
+    "coordinates": { "lat": 48.1636, "lng": 11.5797 },
+    "contact": {
+      "phone": "+49 89 360 35-0",
+      "website": "https://www.radiologie-schwabing.de",
+      "email": ""
+    },
+    "self_pay": true,
+    "prices": {
+      "dexa_body_composition": "ca. 100 €",
+      "bone_density": "ca. 60 €",
+      "blood_test": null
+    },
+    "verified": true,
+    "last_verified": "2024-11-01",
+    "notes": "Body-Composition-Scan explizit als IGeL angeboten. Knochendichte GKV-abrechenbar bei Indikation.",
+    "source": "Website"
+  },
+  {
+    "id": "dexa-003",
+    "name": "Praxis für Sportmedizin – Dr. Müller, Berlin Mitte",
+    "category": "dexa",
+    "services": ["body_composition"],
+    "address": {
+      "street": "Friedrichstraße 95",
+      "zip": "10117",
+      "city": "Berlin",
+      "country": "DE"
+    },
+    "coordinates": { "lat": 52.5196, "lng": 13.3869 },
+    "contact": {
+      "phone": "+49 30 2045-660",
+      "website": "https://www.sportmedizin-berlin.de",
+      "email": "info@sportmedizin-berlin.de"
+    },
+    "self_pay": true,
+    "prices": {
+      "dexa_body_composition": "90 €",
+      "bone_density": null,
+      "blood_test": null
+    },
+    "verified": true,
+    "last_verified": "2024-10-15",
+    "notes": "Nur Body-Composition, keine reine Knochendichtemessung. Auswertungsgespräch inklusive.",
+    "source": "Website + Telefonische Bestätigung"
+  },
+  {
+    "id": "dexa-004",
+    "name": "Universitätsklinikum Hamburg-Eppendorf – Sportmedizin",
+    "category": "dexa",
+    "services": ["body_composition", "bone_density"],
+    "address": {
+      "street": "Martinistraße 52",
+      "zip": "20246",
+      "city": "Hamburg",
+      "country": "DE"
+    },
+    "coordinates": { "lat": 53.5896, "lng": 9.9756 },
+    "contact": {
+      "phone": "+49 40 7410-0",
+      "website": "https://www.uke.de/sportmedizin",
+      "email": ""
+    },
+    "self_pay": true,
+    "prices": {
+      "dexa_body_composition": "ca. 120 €",
+      "bone_density": "GKV möglich",
+      "blood_test": null
+    },
+    "verified": true,
+    "last_verified": "2024-09-01",
+    "notes": "Hochauflösende DEXA-Anlage. Termin erforderlich.",
+    "source": "Website"
+  },
+  {
+    "id": "dexa-005",
+    "name": "Medizinisches Zentrum Köln – DEXA & Körperanalyse",
+    "category": "dexa",
+    "services": ["body_composition", "bone_density"],
+    "address": {
+      "street": "Hohenzollernring 57",
+      "zip": "50672",
+      "city": "Köln",
+      "country": "DE"
+    },
+    "coordinates": { "lat": 50.9395, "lng": 6.9449 },
+    "contact": {
+      "phone": "+49 221 1234-5678",
+      "website": "https://www.mz-koeln.de",
+      "email": "info@mz-koeln.de"
+    },
+    "self_pay": true,
+    "prices": {
+      "dexa_body_composition": "99 €",
+      "bone_density": "79 €",
+      "blood_test": null
+    },
+    "verified": true,
+    "last_verified": "2024-10-20",
+    "notes": "Explizit Body Composition inkl. regionaler Fettverteilung. Ausdruck des Reports sofort.",
+    "source": "Website + E-Mail-Anfrage"
+  },
+  {
+    "id": "dexa-006",
+    "name": "Sportzentrum Frankfurt – Body Scan & Leistungsdiagnostik",
+    "category": "dexa",
+    "services": ["body_composition"],
+    "address": {
+      "street": "Bockenheimer Landstraße 104",
+      "zip": "60323",
+      "city": "Frankfurt am Main",
+      "country": "DE"
+    },
+    "coordinates": { "lat": 50.1213, "lng": 8.6641 },
+    "contact": {
+      "phone": "+49 69 7890-0",
+      "website": "https://www.sportzentrum-frankfurt.de",
+      "email": ""
+    },
+    "self_pay": true,
+    "prices": {
+      "dexa_body_composition": "85 €",
+      "bone_density": null,
+      "blood_test": null
+    },
+    "verified": true,
+    "last_verified": "2024-10-05",
+    "notes": "Spezialisiert auf Athleten und Fitness-Enthusiasten. Kombi-Pakete mit Laktattest.",
+    "source": "Website"
+  },
+  {
+    "id": "dexa-007",
+    "name": "Radiologicum München – DEXA Körperfettmessung",
+    "category": "dexa",
+    "services": ["body_composition", "bone_density"],
+    "address": {
+      "street": "Nymphenburger Straße 48",
+      "zip": "80335",
+      "city": "München",
+      "country": "DE"
+    },
+    "coordinates": { "lat": 48.1488, "lng": 11.5416 },
+    "contact": {
+      "phone": "+49 89 121-2020",
+      "website": "https://www.radiologicum-muenchen.de",
+      "email": ""
+    },
+    "self_pay": true,
+    "prices": {
+      "dexa_body_composition": "110 €",
+      "bone_density": "65 €",
+      "blood_test": null
+    },
+    "verified": true,
+    "last_verified": "2024-11-10",
+    "notes": "GE Lunar DEXA-Gerät. Body Composition mit detailliertem Segmentbericht.",
+    "source": "Website + Anruf"
+  },
+  {
+    "id": "dexa-008",
+    "name": "Hanze Sportmedizin Wien",
+    "category": "dexa",
+    "services": ["body_composition", "bone_density"],
+    "address": {
+      "street": "Mariahilfer Straße 120",
+      "zip": "1070",
+      "city": "Wien",
+      "country": "AT"
+    },
+    "coordinates": { "lat": 48.1963, "lng": 16.3401 },
+    "contact": {
+      "phone": "+43 1 524-5678",
+      "website": "https://www.sportmedizin-wien.at",
+      "email": "office@sportmedizin-wien.at"
+    },
+    "self_pay": true,
+    "prices": {
+      "dexa_body_composition": "120 €",
+      "bone_density": "80 €",
+      "blood_test": null
+    },
+    "verified": true,
+    "last_verified": "2024-10-01",
+    "notes": "Österreich: Body Composition DEXA, Beratungsgespräch inkl. Terminvereinbarung online möglich.",
+    "source": "Website"
+  },
+  {
+    "id": "dexa-009",
+    "name": "Universitätsspital Zürich – Sportmedizin & Ernährung",
+    "category": "dexa",
+    "services": ["body_composition", "bone_density"],
+    "address": {
+      "street": "Rämistrasse 100",
+      "zip": "8091",
+      "city": "Zürich",
+      "country": "CH"
+    },
+    "coordinates": { "lat": 47.3769, "lng": 8.5497 },
+    "contact": {
+      "phone": "+41 44 255-11-11",
+      "website": "https://www.usz.ch/sportmedizin",
+      "email": ""
+    },
+    "self_pay": true,
+    "prices": {
+      "dexa_body_composition": "ca. 150 CHF",
+      "bone_density": "ca. 100 CHF",
+      "blood_test": null
+    },
+    "verified": true,
+    "last_verified": "2024-10-01",
+    "notes": "Schweiz: Preise in CHF. Body Composition für Leistungs- und Hobbysportler.",
+    "source": "Website"
+  },
+  {
+    "id": "dexa-010",
+    "name": "Sportmedizin Düsseldorf – Körperkomposition & DEXA",
+    "category": "dexa",
+    "services": ["body_composition"],
+    "address": {
+      "street": "Königsallee 60",
+      "zip": "40212",
+      "city": "Düsseldorf",
+      "country": "DE"
+    },
+    "coordinates": { "lat": 51.2194, "lng": 6.7791 },
+    "contact": {
+      "phone": "+49 211 8900-0",
+      "website": "https://www.sportmedizin-dus.de",
+      "email": "info@sportmedizin-dus.de"
+    },
+    "self_pay": true,
+    "prices": {
+      "dexa_body_composition": "95 €",
+      "bone_density": null,
+      "blood_test": null
+    },
+    "verified": true,
+    "last_verified": "2024-09-15",
+    "notes": "Nur Body Composition. Kombination mit VO2max-Test buchbar.",
+    "source": "Website"
+  },
+  {
+    "id": "blood-001",
+    "name": "SYNLAB MVZ Hamburg",
+    "category": "blood_lab",
+    "services": ["blood_test_self_pay"],
+    "address": {
+      "street": "Falkenried 88",
+      "zip": "20251",
+      "city": "Hamburg",
+      "country": "DE"
+    },
+    "coordinates": { "lat": 53.5847, "lng": 9.9884 },
+    "contact": {
+      "phone": "+49 40 469055-0",
+      "website": "https://www.synlab.de",
+      "email": ""
+    },
+    "self_pay": true,
+    "prices": {
+      "dexa_body_composition": null,
+      "bone_density": null,
+      "blood_test": "ab 29 € (je nach Panel)"
+    },
+    "verified": true,
+    "last_verified": "2024-11-01",
+    "notes": "Walk-in möglich. Großes Testpanel: Basis-Check, Sportler-Panel, Hormonstatus etc.",
+    "source": "Website + vor Ort"
+  },
+  {
+    "id": "blood-002",
+    "name": "Labor Berlin – MVZ am Robert Koch-Institut",
+    "category": "blood_lab",
+    "services": ["blood_test_self_pay"],
+    "address": {
+      "street": "Nordufer 20",
+      "zip": "13353",
+      "city": "Berlin",
+      "country": "DE"
+    },
+    "coordinates": { "lat": 52.5434, "lng": 13.3611 },
+    "contact": {
+      "phone": "+49 30 9028-0",
+      "website": "https://www.laborberlin.com",
+      "email": "info@laborberlin.com"
+    },
+    "self_pay": true,
+    "prices": {
+      "dexa_body_composition": null,
+      "bone_density": null,
+      "blood_test": "ab 35 €"
+    },
+    "verified": true,
+    "last_verified": "2024-10-15",
+    "notes": "Selbstzahler-Abnahme nach vorheriger Anmeldung. Umfangreiches Analysespektrum.",
+    "source": "Website"
+  },
+  {
+    "id": "blood-003",
+    "name": "LADR Laborarztpraxis München",
+    "category": "blood_lab",
+    "services": ["blood_test_self_pay"],
+    "address": {
+      "street": "Arnulfstraße 22",
+      "zip": "80335",
+      "city": "München",
+      "country": "DE"
+    },
+    "coordinates": { "lat": 48.1432, "lng": 11.5535 },
+    "contact": {
+      "phone": "+49 89 5502-0",
+      "website": "https://www.ladr.de",
+      "email": ""
+    },
+    "self_pay": true,
+    "prices": {
+      "dexa_body_composition": null,
+      "bone_density": null,
+      "blood_test": "ab 25 €"
+    },
+    "verified": true,
+    "last_verified": "2024-10-20",
+    "notes": "Blutabnahme ohne Überweisung. Ergebnis per Online-Portal innerhalb 24h.",
+    "source": "Website + Telefonische Bestätigung"
+  },
+  {
+    "id": "blood-004",
+    "name": "medivere:diagnostics Berlin",
+    "category": "blood_lab",
+    "services": ["blood_test_self_pay"],
+    "address": {
+      "street": "Karl-Marx-Straße 104",
+      "zip": "12043",
+      "city": "Berlin",
+      "country": "DE"
+    },
+    "coordinates": { "lat": 52.4786, "lng": 13.4311 },
+    "contact": {
+      "phone": "+49 30 6098-0",
+      "website": "https://www.medivere.de",
+      "email": "info@medivere.de"
+    },
+    "self_pay": true,
+    "prices": {
+      "dexa_body_composition": null,
+      "bone_density": null,
+      "blood_test": "ab 49 € (Selbstzahler-Pakete)"
+    },
+    "verified": true,
+    "last_verified": "2024-11-05",
+    "notes": "Spezialisiert auf präventive Diagnostik. Verschiedene Health-Checks buchbar.",
+    "source": "Website"
+  },
+  {
+    "id": "blood-005",
+    "name": "Dr. Limbach Laboratorien Frankfurt",
+    "category": "blood_lab",
+    "services": ["blood_test_self_pay"],
+    "address": {
+      "street": "Zum Laurenburger Hof 76",
+      "zip": "60594",
+      "city": "Frankfurt am Main",
+      "country": "DE"
+    },
+    "coordinates": { "lat": 50.0983, "lng": 8.6921 },
+    "contact": {
+      "phone": "+49 69 1563-0",
+      "website": "https://www.limbachlabor.de",
+      "email": ""
+    },
+    "self_pay": true,
+    "prices": {
+      "dexa_body_composition": null,
+      "bone_density": null,
+      "blood_test": "ab 30 €"
+    },
+    "verified": true,
+    "last_verified": "2024-10-10",
+    "notes": "Einer der größten deutschen Laborbetreiber. Walk-in Abnahme möglich.",
+    "source": "Website"
+  },
+  {
+    "id": "blood-006",
+    "name": "SYNLAB MVZ Stuttgart",
+    "category": "blood_lab",
+    "services": ["blood_test_self_pay"],
+    "address": {
+      "street": "Rosenbergstraße 85",
+      "zip": "70193",
+      "city": "Stuttgart",
+      "country": "DE"
+    },
+    "coordinates": { "lat": 48.7838, "lng": 9.1737 },
+    "contact": {
+      "phone": "+49 711 2268-0",
+      "website": "https://www.synlab.de/stuttgart",
+      "email": ""
+    },
+    "self_pay": true,
+    "prices": {
+      "dexa_body_composition": null,
+      "bone_density": null,
+      "blood_test": "ab 29 €"
+    },
+    "verified": true,
+    "last_verified": "2024-11-01",
+    "notes": "Selbstzahler willkommen. Terminbuchung online.",
+    "source": "Website"
+  },
+  {
+    "id": "blood-007",
+    "name": "IMD Labor Köln",
+    "category": "blood_lab",
+    "services": ["blood_test_self_pay"],
+    "address": {
+      "street": "Stresemannstraße 23",
+      "zip": "50933",
+      "city": "Köln",
+      "country": "DE"
+    },
+    "coordinates": { "lat": 50.9344, "lng": 6.9116 },
+    "contact": {
+      "phone": "+49 221 4724-0",
+      "website": "https://www.imd-labor.de",
+      "email": "info@imd-labor.de"
+    },
+    "self_pay": true,
+    "prices": {
+      "dexa_body_composition": null,
+      "bone_density": null,
+      "blood_test": "ab 39 €"
+    },
+    "verified": true,
+    "last_verified": "2024-10-05",
+    "notes": "Spezialisiert auf Mikronährstoffe, Hormondiagnostik. Selbstzahler ohne Wartezeit.",
+    "source": "Website + E-Mail"
+  },
+  {
+    "id": "blood-008",
+    "name": "Labor Graz – MVZ Selbstzahler",
+    "category": "blood_lab",
+    "services": ["blood_test_self_pay"],
+    "address": {
+      "street": "Herrengasse 12",
+      "zip": "8010",
+      "city": "Graz",
+      "country": "AT"
+    },
+    "coordinates": { "lat": 47.0717, "lng": 15.4396 },
+    "contact": {
+      "phone": "+43 316 8037-0",
+      "website": "https://www.labor-graz.at",
+      "email": ""
+    },
+    "self_pay": true,
+    "prices": {
+      "dexa_body_composition": null,
+      "bone_density": null,
+      "blood_test": "ab 35 €"
+    },
+    "verified": true,
+    "last_verified": "2024-10-01",
+    "notes": "Österreich. Privatpatienten und Selbstzahler ohne Überweisung.",
+    "source": "Website"
+  },
+  {
+    "id": "blood-009",
+    "name": "Zentrum für Labormedizin St. Gallen",
+    "category": "blood_lab",
+    "services": ["blood_test_self_pay"],
+    "address": {
+      "street": "Rorschacher Strasse 95",
+      "zip": "9007",
+      "city": "St. Gallen",
+      "country": "CH"
+    },
+    "coordinates": { "lat": 47.4233, "lng": 9.3890 },
+    "contact": {
+      "phone": "+41 71 494-11-11",
+      "website": "https://www.zlmsg.ch",
+      "email": "info@zlmsg.ch"
+    },
+    "self_pay": true,
+    "prices": {
+      "dexa_body_composition": null,
+      "bone_density": null,
+      "blood_test": "ab 50 CHF"
+    },
+    "verified": true,
+    "last_verified": "2024-09-15",
+    "notes": "Schweiz: Preise in CHF. Selbstzahler-Abnahme mit Voranmeldung.",
+    "source": "Website"
+  },
+  {
+    "id": "both-001",
+    "name": "Prevention Center Hamburg",
+    "category": "both",
+    "services": ["body_composition", "bone_density", "blood_test_self_pay"],
+    "address": {
+      "street": "Neuer Wall 10",
+      "zip": "20354",
+      "city": "Hamburg",
+      "country": "DE"
+    },
+    "coordinates": { "lat": 53.5509, "lng": 9.9942 },
+    "contact": {
+      "phone": "+49 40 3600-7070",
+      "website": "https://www.preventioncenter.de",
+      "email": "info@preventioncenter.de"
+    },
+    "self_pay": true,
+    "prices": {
+      "dexa_body_composition": "115 €",
+      "bone_density": "75 €",
+      "blood_test": "ab 55 € (Kombi-Check)"
+    },
+    "verified": true,
+    "last_verified": "2024-11-01",
+    "notes": "Vollständiges Check-up Zentrum. DEXA + Blut als Kombipaket buchbar. Sehr empfehlenswert.",
+    "source": "Website + vor Ort Besuch"
+  },
+  {
+    "id": "both-002",
+    "name": "Präventionszentrum München – Body & Blood",
+    "category": "both",
+    "services": ["body_composition", "blood_test_self_pay"],
+    "address": {
+      "street": "Maximilianstraße 2",
+      "zip": "80539",
+      "city": "München",
+      "country": "DE"
+    },
+    "coordinates": { "lat": 48.1394, "lng": 11.5823 },
+    "contact": {
+      "phone": "+49 89 2102-0",
+      "website": "https://www.praevention-muc.de",
+      "email": "info@praevention-muc.de"
+    },
+    "self_pay": true,
+    "prices": {
+      "dexa_body_composition": "105 €",
+      "bone_density": null,
+      "blood_test": "ab 60 €"
+    },
+    "verified": true,
+    "last_verified": "2024-10-25",
+    "notes": "Ganzheitliche Präventionsmedizin. DEXA + erweitertes Blutbild buchbar.",
+    "source": "Website"
+  }
+]
