@@ -37,7 +37,7 @@ Interaktive Karte für **DEXA Body-Composition-Scans** und **Selbstzahler-Blutla
 
 ```bash
 # 1. Repository klonen
-git clone https://github.com/zakarialamsahel7-gif/laborsuche-dach
+git clone https://github.com/zakarialamsahel7-gif/laborsuche-dach.git
 cd laborsuche-dach
 
 # 2. Virtuelle Umgebung
